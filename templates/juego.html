@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}EL JUEGO{% endblock title %}
+
+{% block content %}
+    <div>
+        <img src="static/img/enigma 480.jpg" class="img-fluid" alt="OK">
+    </div>
+
+    <div>
+        <h2>Teclee un número entre el 1 y el 30</h2>
+    </div>
+
+    <div>
+        <form method="post" action="/juego">
+            <div class="form-group col-md-6">
+                <input type="text" autofocus class="form-control" id="formGroupExampleInput" placeholder="Número" name="guess">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+{% endblock content %}
